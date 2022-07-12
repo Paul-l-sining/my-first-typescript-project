@@ -1,12 +1,15 @@
 import React from 'react';
 import Reminder from '../modules/reminder';
 
+// example of creating rsf(react stateless function)
+// decorate the props
 interface ReminderListProps{
     items: Reminder[]; 
     onDelete: (id: number)=>void;
 }
 
 
+// example of implementing a button
 function ReminderList({ items, onDelete }: ReminderListProps) {
     return (
         <div>

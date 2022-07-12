@@ -9,11 +9,14 @@ import NewReminder from './components/NewReminder';
 
 function App() {
 
+  // example of using state hook
   const [reminderList, setReminderList] = useState<Reminder[]>([])
 
+
+  // example of using effect hook
   useEffect(()=>{
       loadReminders();
-  }, [])
+  }, []) // terminate componentDidUpdate()
 
   const loadReminders = async() => {
     const response = await ReminderService.getReminders()

@@ -5,6 +5,7 @@ interface NewReminderProps {
 }
 
 
+
 function NewReminder({ onAdd }:NewReminderProps): JSX.Element {
 
     const [title, setTitle] = useState('');
@@ -16,6 +17,7 @@ function NewReminder({ onAdd }:NewReminderProps): JSX.Element {
         setTitle("");
     }
 
+    // example of implementing input box
     return (
         <form onSubmit={submitForm}>
             <label htmlFor="title"></label>

@@ -1,7 +1,7 @@
 import axios from "axios";
 import Reminder from '../modules/reminder';
 
-
+// example of calling backend service 
 class ReminderService {
 
     http = axios.create({
